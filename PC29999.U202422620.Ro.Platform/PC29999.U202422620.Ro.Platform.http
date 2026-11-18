@@ -1,0 +1,17 @@
+@hostAddress = http://localhost:5000
+
+POST {{hostAddress}}/api/v1/patients/72c18fc2-090b-4aef-979a-1a174db822f5/prescriptions
+Accept: application/json
+Accept-Language: en-US
+Content-Type: application/json
+
+{
+  "prescriptionNumber": "RX-550123",
+  "patientId": "72c18fc2-090b-4aef-979a-1a174db822f5",
+  "startDate": "2026-11-18",
+  "endDate": "2026-11-28",
+  "dailyQuantity": 2,
+  "activeIngredient": "AMOXICILINA",
+  "status": "Authorized",
+  "clinicalNotes": "Take with water"
+}
